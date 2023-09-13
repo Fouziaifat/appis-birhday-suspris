@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(50deg,#b5e9f3,#03045E); 
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+}
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 400px;
+    background: linear-gradient(35deg,#03045E,#CAF0F8);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+.container .card:hover{
+    height: 400px;
+}
+.container .card .imgB {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    background: #000;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .card:hover .imgB{
+    top: -100px;
+    border-radius: 20px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.container.card.imgB img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 220px;
+}
+.container .card .content{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    padding: 0 30px;
+    height: 37px;
+    overflow: hidden;
+    text-align: center;
+}
+.container .card:hover .content{
+    top: 110px;
+    height: 250px;
+}
+.container .card .content h2 {
+    font-family: 'Henny Penny', cursive;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #CAF0F8;
+}
+.container .card .content p{
+    font-family: 'Satisfy', cursive;  
+    font-size: 1.3em;
+    color: #becbce;
+}
+audio {
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    color: #03045E;    
+}
